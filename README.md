@@ -1,2 +1,2 @@
 # tgbot
-tgbot for stickball
+tgbot for strikeball
