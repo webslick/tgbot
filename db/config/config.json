@@ -1,0 +1,10 @@
+{
+  "development":{
+    "username": "Raduminas",
+    "password": "123qwert",
+    "database": "plodbotgod",
+    "host": "0.0.0.0",
+    "dialect": "mysql"
+  }
+
+}

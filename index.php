@@ -1,2 +1,2 @@
 <?php
-    echo "Hello Habrahabr!";
+   require './admin_page';
