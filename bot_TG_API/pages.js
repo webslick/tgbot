@@ -331,22 +331,6 @@ function changePageFighterSearch(settings,fighter_search) {
   `
 }
 
-module.exports = {
-  main,
-  sale,
-  purchase,
-  notifications,
-  verification,
-  recruiting,
-  team_search,
-  fighter_search,
-  keyboard_notifications_btn_msg,
-  changePageMain,
-  changePageNotifications,
-  changePageFighterSearch,
-  changePageTeamSearch,
-}
-
 
 let albums = [
 "https://vk.com/album-111727979_226945976_0",
@@ -927,3 +911,25 @@ let scammers = [
             "https://vk.com/topic-84428774_31126764",
             "https://vk.com/topic-137598288_35217949"
 ]
+
+
+module.exports = {
+  main,
+  sale,
+  purchase,
+  notifications,
+  verification,
+  recruiting,
+  team_search,
+  fighter_search,
+  keyboard_notifications_btn_msg,
+  changePageMain,
+  changePageNotifications,
+  changePageFighterSearch,
+  changePageTeamSearch,
+  albums,
+  comand_topic,
+  topics,
+  scammers
+
+}

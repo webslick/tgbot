@@ -1,9 +1,9 @@
 {
   "development":{
-    "username": "Raduminas",
-    "password": "123qwert",
-    "database": "plodbotgod",
-    "host": "0.0.0.0",
+    "username": "admin",
+    "password": "123",
+    "database": "tgbot",
+    "host": "45.144.64.224",
     "dialect": "mysql"
   }
 

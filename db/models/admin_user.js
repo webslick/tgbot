@@ -23,6 +23,7 @@ module.exports = (sequelize, DataTypes) => {
     admin_chat_tg_id: DataTypes.STRING,
     albums: DataTypes.STRING,
     command_topics: DataTypes.STRING,
+    topics: DataTypes.STRING,
     scammers: DataTypes.STRING,
     categories: DataTypes.STRING,
     info_project: DataTypes.STRING

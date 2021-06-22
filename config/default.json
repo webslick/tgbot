@@ -1,10 +1,15 @@
 {
-  "development":{
-    "username": "Raduminas",
-    "password": "123qwert",
-    "database": "plodbotgod",
-    "host": "0.0.0.0",
-    "dialect": "mysql"
+  "Server": {
+    "dbConfig":  {
+      "development":{
+        "username": "admin",
+        "password": "123",
+        "database": "tgbot",
+        // "host": "localhost",
+        "host": "45.144.64.224",
+        "dialect": "mysql"
+      }
+    },
+    "port": 8000
   }
-
 }

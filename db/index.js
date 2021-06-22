@@ -204,11 +204,68 @@ const getUser = async (id) => {
   }
 }
 
+const putUser = async (id,body) => {
+  Users.update(body, {
+    where: {
+      id,
+    }
+  })
+  .then(result => {
+    if (!result || result === null || result === "" || result[0] === 0) return console.log({msg: "Not user in table"})
+     console.log("Update base succes")
+  })
+  .catch(error => {
+    console.log(error)
+  }) 
+}
+
+const putAdmin = async (body) => {
+  Admin_user.update(body, {
+    where: {
+      id: 1,
+    }
+  })
+  .then(result => {
+    // console.log(result)
+    if (!result || result === null || result === "" || result[0] === 0) return console.log({msg: "Not RESULT"})
+     console.log("Update base succes")
+  })
+  .catch(error => {
+    console.log(error.original)
+  }) 
+}
+
+const creatUser = async (obj) => {
+  if(obj.id !== undefined) {
+    let default_object = {
+      id: obj.id,
+      user_name: obj.user_name !== undefined ? obj.user_name : '',
+      first_name: obj.first_name !== undefined ? obj.first_name : '',
+      last_name: obj.last_name !== undefined ? obj.last_name : '',
+      date_conection: obj.date_conection !== undefined ? obj.date_conection : new Date(),
+      notification_request: obj.notification_request !== undefined ? obj.notification_request : JSON.stringify([{}])
+    }
+
+    Users.create(default_object) 
+    .then(result => {
+      if (!result || result === null || result === "" || result[0] === 0) return console.log({msg: "Not user in table"})
+       console.log("Create user in base succes")
+    })
+    .catch(error => {
+      console.log(error.original.sqlMessage)
+    }) 
+  } else {
+    console.log("NO CREATE USER.PLEASE ENTER ID !!!")
+  }
+}
 
 module.exports = {
   initionalLocal: initionalUserLocalSession,
   initionalGlobal: initionalUserGlobalSession,
   getUsers,
   getUser,
-  getAdminItems
+  getAdminItems,
+  putUser,
+  putAdmin,
+  creatUser
 }

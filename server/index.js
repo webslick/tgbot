@@ -46,6 +46,11 @@ app.listen(PORT,()=>{
     } else {
       console.log('TELEGRAMM BOT NO CONECTION....!');
     }
+
+    // SESSION.creatUser({ id:3234525,last_name:'test' })
+    // console.log(Pages.albums)
+    // SESSION.putAdmin({ login: JSON.stringify() })
+    // SESSION.putUser(3234525,{ notification_request: JSON.stringify([{qrty:1}]) })
   })
 
   // Получаем всех пользователей
